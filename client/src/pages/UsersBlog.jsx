@@ -36,7 +36,7 @@ const UsersBlog = () => {
   }, []);
 
   return (
-    <section className="min-h-[68vh]">
+    <section className="">
       <h1 className="text-center pt-10 pb-5 text-3xl font-black">
         All your Blogs
       </h1>
@@ -44,7 +44,7 @@ const UsersBlog = () => {
       {loading ? (
         <Loader />
       ) : (
-        <div className="px-2">
+        <div className="px-2 min-h-[68vh] flexCenter flex-col">
           {
           blogs.length > 0 ? (
             blogs &&
@@ -62,8 +62,8 @@ const UsersBlog = () => {
               />
             ))
           ) : (
-            <div className="text-center pt-[50%] mb-16">
-              <h1>No blogs yet!</h1>
+            <div className="text-center sm:pt-[10vh] mb-16">
+              <h1 className="mb-3">No blogs yet!</h1>
               <Link className="text-blue-600" to="/create">
                 Post/Create a new blog →{" "}
               </Link>
