@@ -17,8 +17,9 @@ const Blogs = () => {;
       // console.log(data.blogs[0]._id);
       // console.log(data.blogs[3].user._id);
       if(data?.success){
+        const reverseArray = data?.blogs.reverse();
         setLoading(false);
-        setBlogs(data?.blogs);
+        setBlogs(reverseArray);
       }
     }
     catch(err){
