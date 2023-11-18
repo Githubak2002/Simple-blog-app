@@ -3,8 +3,10 @@ import { useState,useEffect } from 'react';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 // input tailwind css
+const ipCss = " border-b-2 focus:outline-none p-2 w-full";
 const inputCss = "border-black p-2 border-2 w-full rounded-md";
 const baseURl = import.meta.env.VITE_BACKEND_BASE_URL;
 
@@ -64,19 +66,33 @@ const BlogDetail = () => {
     
 
   return (
-    <section>
+    <section className='min-h-[70vh] bgImg pt-4'>
       <h2 className='text-center text-xl font-bold my-5'>BLOG DETAIL/EDIT</h2>
 
-      <main className='flexCenter'> 
+      <main className='flex justify-evenly items-center'> 
 
-        <form className='border-2 w-full max-w-[600px] mx-4 px-6 py-12 flex flex-col items-center justify-center gap-y-4 rounded-xl shadow-2xl shadow-slate-400' onSubmit={handleSubmit}>
-            <input className={inputCss} onChange={onChangeHandler} type="text" placeholder='title' value={inputs.title} name="title" required />
-            {/* <input type="text"></input> */}
-            <textarea rows='5' className={`${inputCss} min-h-[20vh]`}  onChange={onChangeHandler} type="text" placeholder='Discription' value={inputs.discription} name="discription" required/>
-            <input className={inputCss} onChange={onChangeHandler} type="text" placeholder='Imgae URL' value={inputs.image} name="image" required/>
+        <motion.form
+         initial={{opacity:0, scale:0}}
+         animate={{opacity:1, scale:1}}
+         transition={{ duration: 0.3 }}
+        className='w-full max-w-[780px] mx-4 px-6 pt-12 flex flex-col gap-y-4 ' onSubmit={handleSubmit}>
+
+            <input className={`${ipCss} italic font-black text-xl sm:text-3xl`}  onChange={onChangeHandler} type="text" placeholder='title' value={inputs.title} name="title" required />
+
+            <textarea rows='5' className={`${ipCss} min-h-[20vh]`}  onChange={onChangeHandler} type="text" placeholder='Discription' value={inputs.discription} name="discription" required/>
+            <input className={ipCss} onChange={onChangeHandler} type="text" placeholder='Imgae URL' value={inputs.image} name="image" required/>
     
-            <button className="p-2 border-black border-2 mt-6 hover:-translate-y-1 transition-all hover:scale-110 rounded-xl" type='submit'>Update</button>
-        </form>
+            <motion.button 
+            animate={{ scale: [1, 0.8, 1] }}
+            transition={{
+                duration: 2,
+                ease: "easeInOut",
+                repeat: Infinity,
+                repeatType: "loop"
+            }}
+
+            className="className=' text-xl sm:text-3xl lg:text-black text-blue-500  focus:outline-none mt-6 w-fit p-2 font-thin hover:text-blue-500 hover:font-black" type='submit'>Update Blog</motion.button>
+        </motion.form>
       </main>
 
     </section>
