@@ -22,8 +22,8 @@ const UsersBlog = () => {
       // console.log(data.u_Blogs.blogs[0].createdAt);
       setUserName(data.u_Blogs.userName);
       if (data?.success) {
-        setLoading(false);
         const reverseArray = data.u_Blogs.blogs.reverse();
+        setLoading(false);
         setBlogs(reverseArray);
         // setBlogs(data.u_Blogs.blogs);
       }
