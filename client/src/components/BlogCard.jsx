@@ -22,8 +22,8 @@ const BlogCard = ({img,title,discription,username,id,isUser,time}) => {
       const {data} = await axios.delete(`${baseURl}/api/v1/blog/delete/${id}`);
       if(data.success){
         toast.error("Blog deleted")
-        navigate('/blogs')
-        // window.location.reload();
+        // navigate('/blogs')
+        window.location.reload();
       }
     }
     catch(err){
