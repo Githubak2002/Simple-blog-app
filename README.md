@@ -1,7 +1,16 @@
 # simple-blog-app-mern
 
+<h4><a href="https://blog-app-z55p.onrender.com">Live Demo →</a></h4>
+
+File structure -
 client - frontend folder
 all other files are for backend.
+
+- live and deployed on render
+- Full [MERN] stack
+- CRUD operation
+- Register a new User
+- Login and Logout functionalities
 
 <!-- 
 0. landing page
