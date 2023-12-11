@@ -1,6 +1,6 @@
-# simple-blog-app-mern
+# Simple Full stack blog-app-mern
 
-<h4><a href="https://blog-app-z55p.onrender.com">Live Demo →</a></h4>
+<h2><a href="https://blog-app-z55p.onrender.com">Live Demo →</a></h2>
 
 File structure -
 client - frontend folder
