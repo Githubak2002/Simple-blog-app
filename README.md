@@ -11,6 +11,7 @@ all other files are for backend.
 - CRUD operation
 - Register a new User
 - Login and Logout functionalities
+- Write and post a new Blog, etc...
 
 <!-- 
 0. landing page
