@@ -13,6 +13,10 @@ all other files are for backend.
 - Login and Logout functionalities
 - Write and post a new Blog, etc...
 
+<a href="https://blog-app-z55p.onrender.com">
+  <img width="1102" alt="full stack blog app" src="https://github.com/Githubak2002/Simple-blog-app/assets/109411443/73df9e60-8c33-426a-8184-69c2c86a0662">
+</a>
+
 <!-- 
 0. landing page
 0. write with pencile Position fixed
