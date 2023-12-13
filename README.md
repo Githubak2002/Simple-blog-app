@@ -1,6 +1,6 @@
 # Simple Full stack blog-app-mern
 
-<h2><a href="https://blog-app-z55p.onrender.com">Live Demo →</a></h2>
+<h2><a href="https://blog-app-z55p.onrender.com" target="blank">Live Demo →</a></h2>
 
 File structure -
 client - frontend folder
@@ -13,7 +13,7 @@ all other files are for backend.
 - Login and Logout functionalities
 - Write and post a new Blog, etc...
 
-<a href="https://blog-app-z55p.onrender.com">
+<a href="https://blog-app-z55p.onrender.com" target="blank">
   <img width="1102" alt="full stack blog app" src="https://github.com/Githubak2002/Simple-blog-app/assets/109411443/73df9e60-8c33-426a-8184-69c2c86a0662">
 </a>
 
