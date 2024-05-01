@@ -34,7 +34,7 @@ const BlogCard = ({img,title,discription,username,id,isUser,time}) => {
     <section 
     data-aos="zoom-in"
     data-aos-delay="50"
-    className='flex sm:mx-auto sm:flex-row sm:w-[90%] sm:item-start sm:mt-10 sm:rounded-none flex-col items-center justify-center mt-6 gap-y-2 mx-3 shadow-2xl shadow-[#000000df] rounded-xl overflow-hidden'>
+    className='flex sm:mx-auto sm:flex-row sm:w-[90%] sm:item-start sm:mt-10 flex-col items-center justify-center mt-6 gap-y-2 mx-3 shadow-2xl shadow-[#000000df] rounded-xl overflow-hidden'>
         
         <div className='sm:h-[340px] sm:w-[60%] sm:overflow-hidden sm:flexCenter'>
         {/* <div className='sm:h-[340px] sm:w-[55%] sm:overflow-hidden sm:relative'> */}
